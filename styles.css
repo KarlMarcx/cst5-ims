@@ -134,7 +134,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.dashboard-main-content {
+.dashboard-main-content, .customer-main-content {
     margin-right: 10px;
     width: 100%;
     flex-grow: 1;
@@ -142,7 +142,7 @@ nav ul li a:hover {
     background: #fff;
 }
 
-.welcome-message{
+.welcome-message, .customer-label {
    padding-left: 16px;
 }
 
@@ -166,11 +166,17 @@ header {
     margin-right: 10px;
 }
 
-.stats {
+.dashboard-stats {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 20px 0;
 }
+.customer-stats{
+    display: flex;
+    justify-content: center;
+}
+
+
 
 .stat-box {
     width: 23%;

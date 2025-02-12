@@ -5,8 +5,8 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Customer</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="customer.php">Customer</a></li>
                 <li><a href="#">Supplier</a></li>
                 <li><a href="#">Category</a></li>
                 <li><a href="#">Stock</a></li>
