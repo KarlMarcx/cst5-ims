@@ -128,7 +128,7 @@ nav ul li a {
     transition: 0.15s;
 }
 
-nav ul li:hover{
+nav ul li a:hover {
     color: #fff;
     background-color: #0559B0;
     cursor: pointer;
