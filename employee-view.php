@@ -1,20 +1,32 @@
 <?php
-
 session_start();
-require 'openinghtml.php';
+require 'openinghtml.php'; ?>
 
-?>
-
-<?php
-require 'sidebar1.php';
-?>
+<?php require 'sidebar1.php' ?>
 
 <div class="dashboard-main-content">
-    <?php
-    require 'header1.php';
-    ?>
+    <header>
+        <h2>Inventory Management</h2>
+        <div class="user-info">
+            <div class="pfp">
+                <img width="40" height="40" src="https://img.icons8.com/office/40/user.png" alt="user" />
+            </div>
+            <div class="username">
+                <a href="#">User</a>
+            </div>
+            <div class="dropdown-content">
+                <div class="username-profile">
+                    <h4>Karyl Bardago</h4>
+                    <img width="40" height="40" src="https://img.icons8.com/office/40/user.png" alt="user" />
+                </div>
+                <div class="logout-button">
+                    <a href="#">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="welcome-message">
-        <h2>Dashboard</h2>
+        <h2>Employee</h2>
     </div>
     <section class="dashboard-stats">
         <div class="stat-box red">
@@ -34,7 +46,7 @@ require 'sidebar1.php';
             <p>191,845</p>
         </div>
     </section>
-    <section class="sales">
+    <!-- <section class="sales">
         <div class="daily-sales">
             <h3>Today</h3>
             <p>Sell:</p>
@@ -45,7 +57,7 @@ require 'sidebar1.php';
             <p>Sell:</p>
             <p>Buy:</p>
         </div>
-    </section>
+    </section> -->
     <section class="alert-box">
         <h3>Stock Alert</h3>
         <div class="stock-alert-info">
@@ -59,6 +71,5 @@ require 'sidebar1.php';
     </section>
 </div>
 
-<?php
-require 'closinghtml.php';
-?>
+
+<?php require 'closinghtml.php' ?>

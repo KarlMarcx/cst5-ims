@@ -1,23 +1,32 @@
 <?php
-  session_start();
+session_start();
 $error_message = '';
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    if(!empty($_POST['email']) && !empty($_POST['password'])){
-        $_SESSION['user']=['email'=>$_POST['email'], 'password'=>$_POST['password']];
-         header("Location: dashboard.php");
-         exit();
-    }
-    else{
-        $error_message = "Please fill in both email and password.";   
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    if (!empty($email) && !empty($password)) {
+        $_SESSION['user'] = [
+            'email' => $email , 
+            'password' => $password
+        ];
+        if ($_SESSION['user']['email'] === 'admin@gmail.com' && $_SESSION['user']['password'] === 'admin') {
+            header("Location: dashboard.php");
+            exit();
+        } else {
+            header("Location: employee-view.php");
+            exit();
+        }
+    } else {
+        $error_message = "Please fill in both email and password.";
     }
 }
 ?>
 
-
 <div class="login-container">
     <div class="login-box">
         <div class="avatar">
-        <img width="40" height="40" src="https://img.icons8.com/office/40/user.png" alt="user"/>
+            <img width="40" height="40" src="https://img.icons8.com/office/40/user.png" alt="user" />
         </div>
         <form method="POST" action="">
             <input type="text" placeholder="Email ID" name="email">
@@ -32,11 +41,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                     <?php echo $error_message; ?>
                 </div>
             <?php endif; ?>
+            <div class="sign-up-container">
+                <h5 class="sign-up-message">Don't have an account?</h5>
+                <a href="sign-up.php">Sign up</a>
+            </div>
         </form>
     </div>
-    </div>
-
-
-
-
-
+</div>

@@ -102,13 +102,23 @@ header .user-info .pfp img{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 80%;
+    width: 84%;
 }
 
 .login-box .error-message{
     margin: 20px;
 }
 
+.sign-up-container{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.sign-up-container a{
+    margin-top: 20px;
+    font-size: 14px;
+}
 .user-info .dropdown-content {
     text-align: center;
     padding: 5px 0;
@@ -116,6 +126,7 @@ header .user-info .pfp img{
     position: absolute;
     top: 100%; 
     right: 5px; 
+    color: black;
     background-color: #fff;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
