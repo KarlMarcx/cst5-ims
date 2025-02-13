@@ -5,7 +5,7 @@
                 <img width="40" height="40" src="https://img.icons8.com/office/40/user.png" alt="user"/>
             </div>            
             <div class="username"> 
-                <a href="#">Baguio</a>
+                <a href="#">Admin</a>
             </div>    
             <div class="dropdown-content">
                 <div class="username-profile">
