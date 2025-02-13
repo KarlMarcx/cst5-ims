@@ -1,6 +1,5 @@
 <?php
     require 'openinghtml.php';
-    require 'sidebar1.php';
-    require 'dashboard.php';
+    require 'login.php';
     require 'closinghtml.php';
 ?>

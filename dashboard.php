@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require 'openinghtml.php';
     require 'sidebar1.php';
 ?>
@@ -52,3 +53,7 @@
                 </div>
         </section>
     </div>
+
+ <?php
+    require 'closinghtml.php';
+?>
