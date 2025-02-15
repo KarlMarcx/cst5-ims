@@ -156,11 +156,7 @@ header .user-info .pfp img{
     width: 84%;
 }
 
-.login-box .error-message{
-    margin: 20px;
-}
-
-.sign-up-option-container{
+.sign-up-container{
     display: flex;
     justify-content: center;
     gap: 5px;

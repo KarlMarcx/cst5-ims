@@ -1,13 +1,17 @@
 <?php
 
 session_start();
+
+if(!isset($_SESSION['user'])){
+    header("Location: index.php");
+    exit();
+}
+
 require 'openinghtml.php';
 
 ?>
 
-<?php
-require 'sidebar1.php';
-?>
+<?php require 'sidebar1.php' ?>
 
 <div class="dashboard-main-content">
     <?php
