@@ -45,7 +45,7 @@
     </div>
     <div class="create-account-button">
         <form action="" method="post">
-            <button>Sign Up</button>
+            <button>Create Account</button>
         </form>
     </div>
 </div>
