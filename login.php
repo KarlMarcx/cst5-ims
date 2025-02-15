@@ -41,8 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <?php echo $error_message; ?>
                 </div>
             <?php endif; ?>
-            <div class="sign-up-container">
-                <h5 class="sign-up-message">Don't have an account?</h5>
+            <div class="sign-up-option-container">
+                <h5 class>Don't have an account?</h5>
                 <a href="sign-up.php">Sign up</a>
             </div>
         </form>
