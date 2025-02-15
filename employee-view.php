@@ -2,7 +2,7 @@
 session_start();
 require 'openinghtml.php'; ?>
 
-<?php require 'sidebar1.php' ?>
+<?php require 'employee-view-sidebar.php' ?>
 
 <div class="dashboard-main-content">
     <header>
@@ -20,7 +20,7 @@ require 'openinghtml.php'; ?>
                     <img width="40" height="40" src="https://img.icons8.com/office/40/user.png" alt="user" />
                 </div>
                 <div class="logout-button">
-                    <a href="#">Log Out</a>
+                    <a href="logout.php">Log Out</a>
                 </div>
             </div>
         </div>
@@ -46,18 +46,6 @@ require 'openinghtml.php'; ?>
             <p>191,845</p>
         </div>
     </section>
-    <!-- <section class="sales">
-        <div class="daily-sales">
-            <h3>Today</h3>
-            <p>Sell:</p>
-            <p>Buy:</p>
-        </div>
-        <div class="monthly-sales">
-            <h3>Monthly</h3>
-            <p>Sell:</p>
-            <p>Buy:</p>
-        </div>
-    </section> -->
     <section class="alert-box">
         <h3>Stock Alert</h3>
         <div class="stock-alert-info">

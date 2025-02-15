@@ -13,7 +13,10 @@
                 <img width="40" height="40" src="https://img.icons8.com/office/40/user.png" alt="user" />
             </div>
             <div class="logout-button">
-                <a href="#">Log Out</a>
+                <form action="" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button>Log Out</button>
+                </form>
             </div>
         </div>
     </div>
